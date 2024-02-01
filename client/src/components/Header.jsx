@@ -1,4 +1,6 @@
 import React from "react";
+import { Link, useNavigate } from 'react-router-dom';
+import { FaSearch } from 'react-icons/fa';
 
 const Header = () => {
   return (
@@ -15,7 +17,7 @@ const Header = () => {
             type="text"
             placeholder="Search..."
             className="bg-transparent focus:outline-none w-24 sm:w-64"
-            value={searchTerm}
+          
           />
           <button>
             <FaSearch className="text-slate-600" />
